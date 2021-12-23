@@ -11,7 +11,7 @@
     "prod": "npm run webpack -- --env.mode production",
     "prod:compression": "npm run prod -- --env.presets compression",
     "prod:analyze": "npm run prod -- --env.presets analyze",
-    "prod:preproduction": "npm run prod -- --env.presets compression --env.presets analyze",
+    "prod:preProduction": "npm run prod -- --env.presets compression --env.presets analyze",
     "prod:babel": "npm run prod -- --env.presets babel",
     "prod:debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js --env.mode production"
   },
