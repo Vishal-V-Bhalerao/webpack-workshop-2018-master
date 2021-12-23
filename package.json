@@ -1,0 +1,50 @@
+{
+  "name": "webpack-workshop-2018",
+  "version": "1.0.0",
+  "description": "Learning resources for the webpack academy workshop series for 2018",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server ./",
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server",
+    "dev": "npm run webpack-dev-server -- --env.mode development --hot",
+    "prod": "npm run webpack -- --env.mode production",
+    "prod:compression": "npm run prod -- --env.presets compression",
+    "prod:analyze": "npm run prod -- --env.presets analyze",
+    "prod:preproduction": "npm run prod -- --env.presets compression --env.presets analyze",
+    "prod:babel": "npm run prod -- --env.presets babel",
+    "prod:debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js --env.mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLarkInn/webpack-workshop-2018.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheLarkInn/webpack-workshop-2018/issues"
+  },
+  "homepage": "https://github.com/TheLarkInn/webpack-workshop-2018#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "compression-webpack-plugin": "^2.0.0",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-bundle-analyzer": "^3.1.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  }
+}
