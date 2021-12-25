@@ -1,7 +1,7 @@
 /* 
 * ESM Import
 */
-import Header from './header'
+import { makeButton } from './header'
 /* 
 * ESM style import of CommonJs export, thanks to Webpack interop
 */
@@ -9,5 +9,5 @@ import { Footer } from './footer'
 /* 
 * run "node main.js" to run
 */
-console.log(Header)
+document.body.appendChild(makeButton('Hello'))
 console.log(Footer)
